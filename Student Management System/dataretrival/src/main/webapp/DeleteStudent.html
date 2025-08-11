@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete Student</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background: linear-gradient(120deg, #c3e3e1, #dfc3e3);
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .container {
+            max-width: 500px;
+            margin-top: 100px;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        .form-title {
+            text-align: center;
+            color: #d50000;
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 25px;
+        }
+        .btn-delete {
+            background-color: #d50000;
+            color: white;
+            font-weight: bold;
+        }
+        .btn-delete:hover {
+            background-color: #b71c1c;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2 class="form-title">🗑️ Delete Student Record</h2>
+
+    <form method="post" action="/deletestudent">
+        <div class="mb-3">
+            <label class="form-label">Enter Roll Number</label>
+            <input type="number" name="rollno" class="form-control" placeholder="e.g. 101" required>
+        </div>
+
+        <div class="d-grid">
+            <button type="submit" class="btn btn-delete">Confirm Delete</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

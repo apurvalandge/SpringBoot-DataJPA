@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    body {
+    background-color: #f6c1c1; /* Warm and romantic */
+    font-family: 'Poppins', sans-serif;
+}
+    
+        .heading {
+            margin: 50px 0 30px;
+            text-align: center;
+        }
+        .heading h1 {
+            color: #e60073;
+            font-weight: 700;
+        }
+        .lead {
+            color: #007bff;
+            font-size: 1.2rem;
+        }
+        .feature-card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #ff6f61;
+            margin-bottom: 15px;
+        }
+        .feature-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #333;
+        }
+        .feature-desc {
+            color: #555;
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+        .feature-btn {
+            background-color: #00c2cb;
+            color: white;
+            border: none;
+        }
+        .feature-btn:hover {
+            background-color: #0098a0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="heading">
+            <h1>🎓 Student Management System</h1>
+            <p class="lead">Vibrant. Fast. Student-friendly. Your portal to better management.</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+                <div class="feature-card text-center">
+                    <div class="feature-icon">➕</div>
+                    <div class="feature-title">Add Student</div>
+                    <div class="feature-desc">Add new student records including roll number, name and course.</div>
+                    <a href="/student" class="btn feature-btn">Go</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="feature-card text-center">
+                    <div class="feature-icon">🔍</div>
+                    <div class="feature-title">View Students</div>
+                    <div class="feature-desc">View all student details and search by roll number or name.</div>
+                    <a href="/students" class="btn feature-btn">Go</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="feature-card text-center">
+                    <div class="feature-icon">🔧</div>
+                    <div class="feature-title">Update Student</div>
+                    <div class="feature-desc">Edit student information and keep your data up to date.</div>
+                    <a href="/update" class="btn feature-btn">Go</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="feature-card text-center">
+                    <div class="feature-icon">❌</div>
+                    <div class="feature-title">Delete Student</div>
+                    <div class="feature-desc">Remove student records quickly and safely from the database.</div>
+                    <a href="/delete" class="btn feature-btn">Go</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="feature-card text-center">
+                    <div class="feature-icon">🎯</div>
+                    <div class="feature-title">Search By Course and Rollno</div>
+                    <div class="feature-desc">Sort and search students based on the rollno and course they’re enrolled in.</div>
+                    <a href="/search" class="btn feature-btn">Go</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
